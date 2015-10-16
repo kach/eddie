@@ -1,0 +1,7 @@
+Fact A == A
+
+Fact  V(V(aa, ab), ac) == V(aa, V(ab, ac))
+Fact  V(ca, cb) == V(cb, ca)
+Fact  ra == N(V(N(V(ra, rb)), N(V(ra, N(rb)))))
+
+Prove ha == V(N(V(N(ha), hb)), N(V(N(ha), N(hb))))

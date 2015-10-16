@@ -1,0 +1,15 @@
+Fact Forall A A == A
+
+Fact Forall a Forall b Forall c Sum(Sum(a, b), c) == Sum(a, Sum(b, c))
+Fact Forall d Forall e Sum(d, e) == Sum(e, d)
+Fact Forall f Sum(zero(), f) == f
+Fact Forall g Exists h Sum(g, h) == z()
+
+Fact Forall i Forall j Forall k Pro(Pro(i, j), k) == Pro(i, Pro(j, k))
+Fact Forall l Pro(one(), l) == l
+Fact Forall m Pro(m, one()) == m
+
+Fact Forall n Forall o Forall p Pro(n, Sum(o, p)) == Sum(Pro(n, o), Pro(n, p))
+Fact Forall q Forall r Forall s Pro(Sum(q, r), s) == Sum(Pro(q, s), Pro(r, s))
+
+Prove Forall t Pro(zero(), t) == zero()

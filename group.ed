@@ -1,0 +1,9 @@
+Fact Product(id(), X) == X
+Fact Forall r Exists inverse Product(r, inverse) == id()
+Fact Product(Product(a, b), c) == Product(a, Product(b, c))
+
+# What is the (an) inverse of one?
+Ask d Product(id(), d) == id()
+
+# What is the (a) square root of one?
+Ask root Product(root, root) == id()

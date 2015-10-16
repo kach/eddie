@@ -1,0 +1,18 @@
+# Empty it out
+Clear
+# Some set theory for fun and profit
+
+Fact Forall x Forall y (Subset[x, y] <=> (Forall z Member[z, x] => Member[z, y])) {Subset axiom}
+Fact Forall v Forall w (Subset[v, w] && Subset[w, v] <=> v == w) {equality axiom}
+Fact Forall a Forall b (Forall c Member[c, a] && Member[c, b] <=> Member[c, Intersection(a, b)]) {Intersection axiom}
+Fact Forall d Forall e (Forall f Member[f, d] || Member[f, e] <=> Member[f, Union(d, e)])        {Union axiom}
+Fact Forall g !Member[g, empty()] {empty set definition.}
+
+# Subsetship is transitive
+Prove Forall P Forall Q Forall R ((Subset[P, Q] && Subset[Q, R]) => Subset[P, R])
+
+# The empty set is unique
+# Prove empty() == empty()
+
+# borks!
+Prove Forall a Forall b Union(a, b) == Union(b, a) 

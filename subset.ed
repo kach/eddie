@@ -1,0 +1,2 @@
+Fact Forall X Forall Y (Subset[X, Y] <=> (Forall Z Member[Z, X] => Member[Z, Y])) {Subset axiom.}
+Prove Forall P Forall Q Forall R ((Subset[P, Q] && Subset[Q, R]) => Subset[P, R])

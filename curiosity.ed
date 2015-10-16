@@ -1,0 +1,6 @@
+Fact ownsdog[jack()]
+Fact (ownsdog[x] => animallover[x])
+Fact (animallover[y] => !killed[y, cat()])
+Fact (killed[jack(), cat()] || killed[curiosity(), cat()])
+Prove killed[curiosity(), cat()]
+Ask R killed[R, cat()]
